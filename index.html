@@ -1,18 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>UPDATE BERHASIL</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Laporan Budidaya Morowali</title>
     <style>
-        body { background: #004a99; color: white; font-family: sans-serif; text-align: center; padding: 50px; }
-        .box { background: white; color: #333; padding: 20px; border-radius: 10px; display: inline-block; }
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Supaya tidak ada scroll ganda */
+            font-family: Arial, sans-serif;
+        }
+        .header-bar {
+            background-color: #004a99;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        iframe {
+            width: 100%;
+            height: calc(100vh - 60px); /* Mengisi sisa layar setelah header */
+            border: none;
+        }
     </style>
 </head>
 <body>
-    <div class="box">
-        <h1>Laporan Budidaya Morowali</h1>
-        <p>Data terbaru berhasil dimuat pada: <strong>2026</strong></p>
-        <hr>
-        <p>Jika Anda melihat pesan ini, berarti GitHub sudah terupdate.</p>
+
+    <div class="header-bar">
+        DINAS PERIKANAN MOROWALI - LAPORAN BUDIDAYA DIGITAL
     </div>
+
+    <iframe src="https://script.google.com/macros/s/AKfycbwAo1ILPYdHdfh7vyWyneHH4R81SdTxHGITQDSdqodN/exec"></iframe>
+
 </body>
 </html>
