@@ -3,109 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laporan Budidaya Morowali 2026</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <title>LAPORAN BUDIDAYA MOROWALI</title>
     <style>
-        :root { --primary-color: #004a99; --secondary-color: #0088cc; }
-        body { background-color: #f4f7f9; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        .navbar { background-color: var(--primary-color) ! secrecy; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .hero-section { background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white; padding: 60px 0; border-radius: 0 0 50px 50px; }
-        .stats-card { border: none; border-radius: 15px; transition: transform 0.3s; }
-        .stats-card:hover { transform: translateY(-5px); }
-        .table-container { background: white; border-radius: 15px; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f7;
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: #003366;
+            color: #ffffff;
+            padding: 30px 0;
+            text-align: center;
+            border-bottom: #0088cc 5px solid;
+        }
+        .main-content {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 { margin: 0; font-size: 24px; }
+        .info-box {
+            background: #d1ecf1;
+            color: #0c5460;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th { background-color: #003366; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
     </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-dark py-3">
+    <header>
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">
-                <i class="bi bi-water me-2"></i>DINAS PERIKANAN MOROWALI
-            </a>
+            <h1>SISTEM INFORMASI LAPORAN BUDIDAYA</h1>
+            <p>Dinas Perikanan Kabupaten Morowali</p>
         </div>
-    </nav>
-
-    <section class="hero-section text-center mb-5">
-        <div class="container">
-            <h1 class="display-5 fw-bold mb-3">Laporan Hasil Budidaya Perikanan</h1>
-            <p class="lead">Monitoring Data Produksi dan Analisis Wilayah Kabupaten Morowali</p>
-        </div>
-    </section>
+    </header>
 
     <div class="container">
-        <div class="row text-center mb-5">
-            <div class="col-md-4 mb-3">
-                <div class="card stats-card p-4 shadow-sm">
-                    <h3 class="text-primary fw-bold">120+</h3>
-                    <p class="text-muted mb-0">Total Keramba Terdata</p>
-                </div>
+        <div class="main-content">
+            <div class="info-box">
+                Status: Perubahan Data Telah Berhasil Diperbarui
             </div>
-            <div class="col-md-4 mb-3">
-                <div class="card stats-card p-4 shadow-sm">
-                    <h3 class="text-success fw-bold">85%</h3>
-                    <p class="text-muted mb-0">Tingkat Produktivitas</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="card stats-card p-4 shadow-sm">
-                    <h3 class="text-info fw-bold">Semester I</h3>
-                    <p class="text-muted mb-0">Periode Laporan 2026</p>
-                </div>
-            </div>
-        </div>
+            
+            <h3>Data Laporan Semester I - 2026</h3>
+            <p>Berikut adalah ringkasan data budidaya di wilayah Morowali:</p>
 
-        <div class="table-container mb-5">
-            <div class="d-flex justify-content-between align-items-center mb-4">
-                <h4 class="fw-bold m-0 text-dark">Daftar Data Budidaya Terbaru</h4>
-                <button class="btn btn-sm btn-outline-primary" onclick="window.print()">
-                    <i class="bi bi-printer me-1"></i> Cetak Laporan
-                </button>
-            </div>
-            <div class="table-responsive">
-                <table class="table table-hover align-middle">
-                    <thead class="table-light">
-                        <tr>
-                            <th>No</th>
-                            <th>Lokasi Wilayah</th>
-                            <th>Jenis Komoditas</th>
-                            <th>Jumlah Unit</th>
-                            <th>Status Produksi</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Bungku Tengah</td>
-                            <td>Ikan Kerapu</td>
-                            <td>45 Unit</td>
-                            <td><span class="badge bg-success">Optimal</span></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Bahodopi</td>
-                            <td>Ikan Kakap Putih</td>
-                            <td>32 Unit</td>
-                            <td><span class="badge bg-warning text-dark">Pemeliharaan</span></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Menui Kepulauan</td>
-                            <td>Lobster</td>
-                            <td>18 Unit</td>
-                            <td><span class="badge bg-success">Siap Panen</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Kategori</th>
+                        <th>Keterangan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Nama Laporan</strong></td>
+                        <td>Laporan Budidaya Morowali</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Wilayah Kerja</strong></td>
+                        <td>Kabupaten Morowali</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tahun Anggaran</strong></td>
+                        <td>2026</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Objek Analisis</strong></td>
+                        <td>Sektor Perikanan Budidaya</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p style="margin-top: 30px; font-style: italic; color: #666;">
+                *Jika halaman ini muncul, berarti pembaruan repository GitHub telah sinkron.
+            </p>
         </div>
     </div>
 
-    <footer class="bg-dark text-white text-center py-4 mt-5">
-        <p class="mb-0 small">© 2026 Dinas Perikanan Kabupaten Morowali. Seluruh hak cipta dilindungi.</p>
-        <p class="small text-secondary">Aplikasi Laporan Budidaya Digital</p>
+    <footer style="text-align: center; padding: 20px; color: #888; font-size: 12px;">
+        &copy; 2026 Laporan Budidaya Morowali
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
